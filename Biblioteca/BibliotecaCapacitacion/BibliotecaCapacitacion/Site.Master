@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BibliotecaCapacitacion.Site" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="~/views/Biblioteca/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <%--<link href="<%= ResolveClientUrl("~/js/datatables-simple-demo.js") %>" type="text/css" rel="stylesheet"> --%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>--%>
+   <%-- <script src="<%= ResolveClientUrl("~/assets/demo/chart-area-demo.js") %>"></script>
+    <script src="<%= ResolveClientUrl("~/assets/demo/chart-bar-demo.js") %>"></script>--%>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <script src="<%= ResolveClientUrl("~/js/site.js") %>"></script>
+    <script src="<%= ResolveClientUrl("~/Scripts/jquery-3.4.1.js") %>"></script>
+    <script src="<%= ResolveClientUrl("~/Scripts/bootstrap.min.js") %>"></script>
+    
+
+
+</head>
+<body>
+    <form  id="form1" runat="server">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Biblioteca de Archivos</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+           <input runat="server" type="hidden" id="hdnRut" />
+            <ul class="navbar-nav ms-auto ms-md-6 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <label runat="server" id="nomUser" class="mr-2 d-none d-lg-inline text-gray-600 small"></label>
+                                <img class="img-profile rounded-circle"
+                                    src="img/user.png"></a>
+                   <%-- <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#!">Configuración</a></li>                
+                        <li><a class="dropdown-item" href="#!">Cerrar Sesión</a></li>
+                    </ul>--%>
+                </li>
+
+               
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Inicio</div>
+                            <a class="nav-link" href="views/Biblioteca/BibliotecaArchivos.aspx">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="">
+                                <div class="sb-nav-link-icon"><i class="fa fa-archive"></i></div>
+                                Mi Unidad
+                            </a>
+                              <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Warning Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                                         
+                        </div>
+                    </div>
+                  
+                </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+        </div>
+      
+       
+
+
+    </form>
+</body>
+</html>
