@@ -556,19 +556,21 @@
     <Content Include="vendors\Scripts\umd\popper.js" />
     <Content Include="vendors\Scripts\umd\popper.min.js" />
     <Content Include="views\Biblioteca\BibliotecaArchivos.aspx" />
-    <Content Include="views\Biblioteca\css\styles.css" />
     <Content Include="views\Biblioteca\img\iconCaja.png" />
     <Content Include="views\Biblioteca\img\iconContenedor.png" />
     <Content Include="views\Biblioteca\img\iconPapel.png" />
     <Content Include="views\Biblioteca\img\iconPlastico.png" />
     <Content Include="views\Biblioteca\img\iconTecnologico.png" />
     <Content Include="views\Biblioteca\img\iconVidrio.png" />
+    <Content Include="views\Biblioteca\img\img100.png" />
+    <Content Include="views\Biblioteca\img\img48.png" />
     <Content Include="views\Biblioteca\img\undraw_profile.svg" />
     <Content Include="views\Biblioteca\img\user.png" />
     <Content Include="views\Biblioteca\js\datatables-simple-demo.js" />
     <Content Include="views\Biblioteca\js\biblioteca.js" />
     <Content Include="views\Biblioteca\js\scripts.js" />
-    <Content Include="views\Biblioteca\MyUnit.aspx" />
+    <Content Include="views\Biblioteca\MiUnidad.aspx" />
+    <Content Include="views\Biblioteca\css\MiUnidad.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -590,12 +592,12 @@
     <Compile Include="views\Biblioteca\BibliotecaArchivos.aspx.designer.cs">
       <DependentUpon>BibliotecaArchivos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="views\Biblioteca\MyUnit.aspx.cs">
-      <DependentUpon>MyUnit.aspx</DependentUpon>
+    <Compile Include="views\Biblioteca\MiUnidad.aspx.cs">
+      <DependentUpon>MiUnidad.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="views\Biblioteca\MyUnit.aspx.designer.cs">
-      <DependentUpon>MyUnit.aspx</DependentUpon>
+    <Compile Include="views\Biblioteca\MiUnidad.aspx.designer.cs">
+      <DependentUpon>MiUnidad.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

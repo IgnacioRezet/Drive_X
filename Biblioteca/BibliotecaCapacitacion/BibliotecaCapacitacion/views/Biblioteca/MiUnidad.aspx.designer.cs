@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace BibliotecaCapacitacion.views.Biblioteca
+namespace BibliotecaCapacitacion.views.Unidad
 {
 
 
-    public partial class MyUnit
+    public partial class MiUnidad
     {
     }
 }
