@@ -556,6 +556,8 @@
     <Content Include="vendors\Scripts\umd\popper.js" />
     <Content Include="vendors\Scripts\umd\popper.min.js" />
     <Content Include="views\Biblioteca\BibliotecaArchivos.aspx" />
+    <Content Include="views\Biblioteca\img\document50.png" />
+    <Content Include="views\Biblioteca\img\documents100.png" />
     <Content Include="views\Biblioteca\img\iconCaja.png" />
     <Content Include="views\Biblioteca\img\iconContenedor.png" />
     <Content Include="views\Biblioteca\img\iconPapel.png" />
@@ -564,8 +566,11 @@
     <Content Include="views\Biblioteca\img\iconVidrio.png" />
     <Content Include="views\Biblioteca\img\img100.png" />
     <Content Include="views\Biblioteca\img\img48.png" />
+    <Content Include="views\Biblioteca\img\img50.png" />
     <Content Include="views\Biblioteca\img\undraw_profile.svg" />
     <Content Include="views\Biblioteca\img\user.png" />
+    <Content Include="views\Biblioteca\img\video100.png" />
+    <Content Include="views\Biblioteca\img\video50.png" />
     <Content Include="views\Biblioteca\js\datatables-simple-demo.js" />
     <Content Include="views\Biblioteca\js\biblioteca.js" />
     <Content Include="views\Biblioteca\js\scripts.js" />
