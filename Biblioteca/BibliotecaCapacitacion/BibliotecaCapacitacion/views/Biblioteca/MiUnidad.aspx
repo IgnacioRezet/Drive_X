@@ -6,7 +6,9 @@
     <link href="css/MiUnidad.css" rel="stylesheet" />
 
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <div id="layoutSidenav_content">
         <div class="container-fluid px-4 py-1">
             <div class="row">
@@ -45,11 +47,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-12">                   
+                <div class="col-xl-12">
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="optimization">
                             <div class="design-process-content">
                                 <h5 class="semi-bold">Imagenes</h5>
+
+                                <div class="row">
+                                    <div class="image-upload-wrap">
+                                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                        <div class="drag-text">
+                                            <h3>Drag and drop a file or select add Image</h3>
+                                        </div>
+                                    </div>
+
+                                    <div onclick="$('.file-upload-input').trigger( 'click' )">hola</div>
+                                </div>
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane " id="discover">
@@ -73,31 +86,31 @@
         function tab(num) {
             if (num == 0) {
                 $("#idtabImg").removeAttr('class');
-                $("#idtabImg").attr('class', 'col-md-4 border-right border-secondary rounded');
+                $("#idtabImg").attr('class', 'col-md-4 border-right border-secondary ');
 
                 $("#idtabVideo").removeAttr('class');
-                $("#idtabVideo").attr('class', 'col-md-4 border-right border-bottom border-secondary rounded');
+                $("#idtabVideo").attr('class', 'col-md-4 border-right border-bottom border-secondary ');
 
                 $("#idtabDocument").removeAttr('class');
-                $("#idtabDocument").attr('class', 'col-md-4  border-bottom border-secondary rounded');
+                $("#idtabDocument").attr('class', 'col-md-4  border-bottom border-secondary ');
             } else if (num == 1) {
                 $("#idtabVideo").removeAttr('class');
-                $("#idtabVideo").attr('class', 'col-md-4 border-right border-secondary rounded');
+                $("#idtabVideo").attr('class', 'col-md-4 border-right border-secondary ');
 
                 $("#idtabImg").removeAttr('class');
-                $("#idtabImg").attr('class', 'col-md-4 border-right border-bottom border-secondary rounded');
+                $("#idtabImg").attr('class', 'col-md-4 border-right border-bottom border-secondary ');
 
                 $("#idtabDocument").removeAttr('class');
-                $("#idtabDocument").attr('class', 'col-md-4  border-bottom border-secondary rounded');
+                $("#idtabDocument").attr('class', 'col-md-4  border-bottom border-secondary ');
             } else if (num == 2) {
                 $("#idtabDocument").removeAttr('class');
                 $("#idtabDocument").attr('class', 'col-md-4  border-secondary');
 
                 $("#idtabVideo").removeAttr('class');
-                $("#idtabVideo").attr('class', 'col-md-4 border-right border-bottom border-secondary rounded');
+                $("#idtabVideo").attr('class', 'col-md-4 border-right border-bottom border-secondary ');
 
                 $("#idtabImg").removeAttr('class');
-                $("#idtabImg").attr('class', 'col-md-4 border-right border-bottom border-secondary rounded');
+                $("#idtabImg").attr('class', 'col-md-4 border-right border-bottom border-secondary ');
             }
         }
     </script>
